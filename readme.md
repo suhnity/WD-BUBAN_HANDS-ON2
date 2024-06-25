@@ -4,30 +4,27 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/suhnity/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/readme-icon.png" alt="ponyork" width="180" height="180">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Hands on #2</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+ This is a website inspired by Studio Ghibli movies, showcasing 5 different hero designs, 5 static and 5 animated versions of card designs. It contains container manipulations that are both functional and visually engaging. My knowledge in HTML, CSS, and layout techniques helped me to create a user-friendly website.
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=suhnity/WD-Hands-on-2_Buban)
 
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -54,29 +51,17 @@
 ---
 
 ## Overview
+This project demonstrates the coding of HTML and CSS in different kinds of hero designs, static and animated versions of card designs. This is to have hands-on experience in coding and having an actual output.
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Navigational Buttons
+- Static and Animated
 
 ### Technology
-<!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -117,4 +102,6 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Ponyo Icon | For readme purposes | https://i.pinimg.com/564x/b7/a1/d0/b7a1d02bf80a68aa770d3ef74e36630d.jpg |
+| Other Images and Icons | For background, hero and card pages | [pinterest.com](https://ph.pinterest.com/) |
+| Studio Ghibli facts and abouts | Description of heroes | google.com |
