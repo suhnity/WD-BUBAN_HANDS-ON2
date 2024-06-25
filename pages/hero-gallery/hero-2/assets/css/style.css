@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-accent-1: #c6a288;
+  --color-accent-2: #c99678;
+  --color-secondary-1: #4b403e;
+  --color-secondary-2: #120d0c;
+  --color-primary-1: #f3f3f3;
+  --color-primary-2: #d6d6d6;
+
+  --header-font: "Poppins", sans-serif;
+  --content-font: "Urbanist", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--content-font);
+}
+
+/* HEADER */
+
+.header {
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ponyo_logo {
+  width: 5rem;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.buttons {
+  height: 40px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 900;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.buttons::before {
+  background: #57575783;
+  width: 0;
+  height: 2px;
+  content: "";
+  display: block;
+  position: relative;
+  top: 20px;
+  right: 5px;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.buttons:hover {
+  transform: scale(0.85);
+  opacity: 0.9;
+  border-bottom: 5px solid rgb(236, 223, 223);
+}
+
+.buttons:hover::before {
+  width: 100%;
+}
+
+/* HEADER ANIMATIONS */
+.hover .ponyo_logo:not(:hover),
+.hover .buttons:not(:hover) {
+  transform: scale(0.85);
+  opacity: 0.8;
+}
+
+.ponyo_logo {
+  transition: 0.3s ease;
+}
+
+.ponyo_logo:hover {
+  filter: drop-shadow(5px 5px 5px rgb(141, 141, 141));
+}
+
+/* Body */
+
+body {
+  color: var(--color-primary-1);
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.wallpaper {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.ponyo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.ponyo-card {
+    height: 150px;
+    width: 370px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f9e79f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    position: relative;
+    left: 30.5vw;
+    bottom: -100px;
+  
+    & .ponyo-image {
+      justify-content: center;
+      border-radius: 50%;
+      align-items: center;
+      max-width: 91.9%;
+      min-width: 91.9%;
+      max-height: 350px;
+      min-height: 350px;
+      object-fit: cover;
+      border: 1px solid #000;
+      margin: 5px 0;
+      top: -340px;
+      left: 12px;
+      z-index: 1;
+    }
+  
+    & .card-info {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+  
+    & img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    & .card {
+      background: rgba(255, 255, 255, 0.514);
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 600px;
+      min-width: 600px;
+      z-index: 1;
+    }
+}
