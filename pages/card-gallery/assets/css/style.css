@@ -22,8 +22,6 @@
   font-family: var(--content-font);
 }
 
-/* HEADER */
-
 .header {
   margin: 0;
   padding: 1rem;
@@ -34,8 +32,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0); /* Adjust background color and opacity */
-  z-index: 999; /* Ensure header is on top of everything */
+  background-color: rgba(0, 0, 0, 0); 
+  z-index: 999; 
 }
 
 .logo {
@@ -106,7 +104,7 @@
 }
 
 
-/* Body */
+
 
 body {
   color: var(--color-primary-1);
@@ -121,7 +119,6 @@ body {
 .design {
   position: relative;
   width: 100%;
- /* Adjust max-width as needed */
 }
 
 .wallpaper {
@@ -139,7 +136,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust height as needed */
+  height: 100vh;
   width: 100%;
   gap: 6rem;
 }
@@ -155,7 +152,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 375px; /* Adjust max-width as needed */
+    max-width: 375px;
     text-align: left;
     
 }
@@ -174,12 +171,12 @@ body {
 }
 
 .card-info-1 h2 {
-  font-size: 1.5rem; /* Adjust font size */
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .card-info-1 p {
-  font-size: 1rem; /* Adjust font size */
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -195,9 +192,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 375px; /* Adjust max-width as needed */
+    max-width: 375px; 
     text-align: left;
-    transition: background-color 0.3s ease; /* Added transition for smooth effect */
+    transition: background-color 0.3s ease;
 }
 
 .animated-card-1:hover {
@@ -219,12 +216,12 @@ body {
 }
 
 .animated-card-info-1 h2 {
-  font-size: 1.5rem; /* Adjust font size */
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .animated-card-info-1 p {
-  font-size: 1rem; /* Adjust font size */
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -304,12 +301,12 @@ body {
     max-width: 395px;
     height: 542px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .animated-card-2:hover {
-    transform: scale(0.8); /* Scale down on hover */
-    box-shadow: 0px 2px 25px 10px rgb(203, 211, 52); /* Change box-shadow on hover */
+    transform: scale(0.8); 
+    box-shadow: 0px 2px 25px 10px rgb(203, 211, 52); 
 }
 
 .animated-ponyo-card-2 {
@@ -473,12 +470,12 @@ body {
     color: #7f6262;
     position: relative;
     bottom: 9px;
-    transition: border-color 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+    transition: border-color 0.3s, box-shadow 0.3s; 
 }
 
 .animated-ponyo-card-4:hover {
-    border-color: rgb(79, 77, 234); /* Change border color on hover */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Apply box-shadow effect on hover */
+    border-color: rgb(79, 77, 234);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .animated-card-header-4 {
@@ -549,7 +546,7 @@ body {
     min-width: 630px;
     z-index: 1;
     transition: transform 0.3s, left 0.3s, top 0.3s;
-    position: relative; /* Required for centering on hover */
+    position: relative;
 }
 
 .animated-card-5:hover {
@@ -557,8 +554,8 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1.7);
-    position: fixed; /* Ensure it stays in the center of the viewport */
-    z-index: 10; /* Ensure it appears above other elements */
+    position: fixed; 
+    z-index: 10; 
 }
 
 .animated-card-image-5 {
