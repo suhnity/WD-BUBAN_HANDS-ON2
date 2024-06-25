@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-accent-1: #c6a288;
+  --color-accent-2: #c99678;
+  --color-secondary-1: #4b403e;
+  --color-secondary-2: #120d0c;
+  --color-primary-1: #f3f3f3;
+  --color-primary-2: #d6d6d6;
+
+  --header-font: "Poppins", sans-serif;
+  --content-font: "Urbanist", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--content-font);
+}
+
+/* HEADER */
+
+.header {
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0); /* Adjust background color and opacity */
+  z-index: 999; /* Ensure header is on top of everything */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ponyo_logo {
+    width: 5rem;
+  }
+  
+  .choices {
+    display: flex;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+  }
+  
+  .buttons {
+    height: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 900;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .buttons::before {
+    background: #57575783;
+    width: 0;
+    height: 2px;
+    content: "";
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 5px;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  
+  .buttons:hover {
+    transform: scale(0.85);
+    opacity: 0.9;
+    border-bottom: 5px solid rgb(236, 223, 223);
+  }
+  
+  .buttons:hover::before {
+    width: 100%;
+  }
+
+  .hover .ponyo_logo:not(:hover),
+.hover .buttons:not(:hover) {
+  transform: scale(0.85);
+  opacity: 0.8;
+}
+
+.ponyo_logo {
+  transition: 0.3s ease;
+}
+
+.ponyo_logo:hover {
+  filter: drop-shadow(5px 5px 5px rgb(141, 141, 141));
+}
+
+
+/* Body */
+
+body {
+  color: var(--color-primary-1);
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.design {
+  position: relative;
+  width: 100%;
+ /* Adjust max-width as needed */
+}
+
+.wallpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+  width: 100%;
+  gap: 6rem;
+}
+
+
+
+
+.card-1 {
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 375px; /* Adjust max-width as needed */
+    text-align: left;
+    
+}
+
+.card-image-1 {
+    padding: 2rem;
+     width: 20rem;
+     border-radius: 10px;
+     margin-bottom: 20px;
+}
+
+.card-info-1 {
+     width: 100%;
+     text-align: left;
+     color: #fff; 
+}
+
+.card-info-1 h2 {
+  font-size: 1.5rem; /* Adjust font size */
+  margin-bottom: 1rem;
+}
+
+.card-info-1 p {
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.6;
+}
+
+
+
+
+
+.animated-card-1 {
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 375px; /* Adjust max-width as needed */
+    text-align: left;
+    transition: background-color 0.3s ease; /* Added transition for smooth effect */
+}
+
+.animated-card-1:hover {
+    background: rgb(195, 153, 159);
+    transition: ease 0.5;
+}
+
+.animated-card-image-1 {
+    padding: 2rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.animated-card-info-1 {
+    width: 100%;
+    text-align: left;
+    color: #fff; 
+}
+
+.animated-card-info-1 h2 {
+  font-size: 1.5rem; /* Adjust font size */
+  margin-bottom: 1rem;
+}
+
+.animated-card-info-1 p {
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+.card-2 {
+    background: rgb(100, 207, 193);
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 395px;
+    height: 542px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ponyo-card-2 {
+      height: 520px;
+      width: 370px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      background-color: #f9e79f;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: left;
+      font-size: 13px;
+      color: #000;
+      padding: 10px;
+      position: relative;
+      bottom: 9px;
+  }
+  
+  .card-header-2 {
+    text-align: center;
+  }
+  
+  .ponyo-image-2 {
+      justify-content: center;
+      border-radius: 5px;
+      align-items: center;
+      width: 91.9%;
+      height: 350px;
+      object-fit: cover;
+      border: 1px solid #000;
+      margin: 5px 0;
+      top: -340px;
+      left: 12px;
+      z-index: 1;
+  }
+  
+  .card-info-2 {
+      font-size: 24px;
+      margin: 5px 0;
+  }
+  
+  .ponyo-desc-2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+
+
+
+  .animated-card-2 {
+    background: rgb(100, 207, 193);
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 395px;
+    height: 542px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+}
+
+.animated-card-2:hover {
+    transform: scale(0.8); /* Scale down on hover */
+    box-shadow: 0px 2px 25px 10px rgb(203, 211, 52); /* Change box-shadow on hover */
+}
+
+.animated-ponyo-card-2 {
+    height: 520px;
+    width: 370px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f9e79f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    font-size: 13px;
+    color: #000;
+    padding: 10px;
+    position: relative;
+    bottom: 9px;
+}
+
+.animated-card-header-2 {
+    text-align: center;
+}
+
+.animated-ponyo-image-2 {
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    width: 91.9%;
+    height: 350px;
+    object-fit: cover;
+    border: 1px solid #000;
+    margin: 5px 0;
+    top: -340px;
+    left: 12px;
+    z-index: 1;
+}
+
+.animated-card-info-2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.animated-ponyo-desc-2 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+
+
+
+
+  .card-3 {
+    background: rgb(185, 105, 190);
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 450px;
+    min-width: 450px;
+    z-index: 1;
+  }
+  
+  .card__image-3 {
+    max-width: 160px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid #000;
+  }
+  
+  .card-info-3 {
+    width: 50%;
+    font-size: 13px;
+    text-align: left;
+    color: #000;
+  }
+
+.animated-card-3 {
+    background: rgb(185, 105, 190);
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 450px;
+    min-width: 450px;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+.animated-card-3:hover {
+    transform: rotateY(360deg);
+}
+
+.animated-card-image-3 {
+    max-width: 160px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid #000;
+}
+
+.animated-card-info-3 {
+    width: 50%;
+    font-size: 13px;
+    text-align: left;
+    color: #000;
+}
+
+
+.ponyo-card-4 {
+    height: 450px;
+    width: 420px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #22272d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 13px;
+    color: #7f6262;
+    position: relative;
+    bottom: 9px;
+}
+  
+  .card-header-4 {
+    text-align: center;
+  }
+  
+  .ponyo-image-4 {
+      justify-content: center;
+      border-radius: 5px;
+      align-items: center;
+      width: 100%;
+      height: 395px;
+      object-fit: cover;
+      top: -340px;
+      left: 12px;
+      z-index: 1;
+  }
+  
+  .card-info-4 {
+      font-size: 24px;
+      margin: 5px 0;
+      display: center;
+  }
+  
+  .ponyo-desc-4 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+
+  .animated-ponyo-card-4 {
+    height: 450px;
+    width: 420px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #22272d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 13px;
+    color: #7f6262;
+    position: relative;
+    bottom: 9px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added transition for smooth effect */
+}
+
+.animated-ponyo-card-4:hover {
+    border-color: rgb(79, 77, 234); /* Change border color on hover */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Apply box-shadow effect on hover */
+}
+
+.animated-card-header-4 {
+    text-align: center;
+}
+
+.animated-ponyo-image-4 {
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+    height: 395px;
+    object-fit: cover;
+    top: -340px;
+    left: 12px;
+    z-index: 1;
+}
+
+.animated-card-info-4 {
+    font-size: 24px;
+    margin: 5px 0;
+    display: center;
+}
+
+.animated-ponyo-desc-4 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+
+
+.card-5 {
+    background:  #dfdad3;
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 630px;
+    min-width: 630px;
+    z-index: 1;
+  }
+  
+  .card__image-5 {
+    max-width: 260px;
+    border-radius: 10px;
+    margin-right: 20px;
+
+  }
+  
+  .card-info-5 {
+    width: 50%;
+    font-size: 9px;
+    text-align: left;
+    color: #000;
+  }
+
+  .animated-card-5 {
+    background: #dfdad3;
+    border-radius: 15px;
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 630px;
+    min-width: 630px;
+    z-index: 1;
+    transition: transform 0.3s, left 0.3s, top 0.3s;
+    position: relative; /* Required for centering on hover */
+}
+
+.animated-card-5:hover {
+    transform: scale(1.2);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.7);
+    position: fixed; /* Ensure it stays in the center of the viewport */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.animated-card-image-5 {
+    max-width: 260px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.animated-card-info-5 {
+    width: 50%;
+    font-size: 9px;
+    text-align: left;
+    color: #000;
+}
+
+
+
