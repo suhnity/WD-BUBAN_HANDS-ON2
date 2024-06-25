@@ -141,12 +141,12 @@ body {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.473); /* Adjust the transparency here */
+  background: rgba(255, 255, 255, 0.473); 
   border-radius: 15px;
   padding: 60px;
   display: flex;
-  flex-direction: column; /* Change this to column */
-  align-items: flex-start; /* Align items to the start */
+  flex-direction: column; 
+  align-items: flex-start;
   max-width: 500px;
   min-width: 370px;
   z-index: 1;
@@ -157,10 +157,10 @@ body {
   min-width: 20%;
   border-radius: 20px;
   border: 1px solid #000;
-  margin-left: 20px; /* Change margin to the left */
+  margin-left: 20px;
   position: relative;
   top: -10px;
-  left: 10px; /* Position it slightly outside the card */
+  left: 10px; 
   z-index: 2;
 }
 
