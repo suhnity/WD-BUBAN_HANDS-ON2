@@ -22,8 +22,6 @@
   font-family: var(--content-font);
 }
 
-/* HEADER */
-
 .header {
   margin: 0;
   padding: 1rem;
@@ -86,7 +84,6 @@
   width: 100%;
 }
 
-/* HEADER ANIMATIONS */
 .hover .ponyo_logo:not(:hover),
 .hover .buttons:not(:hover) {
   transform: scale(0.85);
@@ -100,8 +97,6 @@
 .ponyo_logo:hover {
   filter: drop-shadow(5px 5px 5px rgb(141, 141, 141));
 }
-
-/* Body */
 
 body {
   color: var(--color-primary-1);
